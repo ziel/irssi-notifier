@@ -46,4 +46,4 @@ I will keep track of terminal-notifier's commits and if someone does find a way 
 Author
 ---
 Patrick Kontschak `<patrick.kontschak@gmail.com>` 2012 
-Forked from Nate Murray's irssi-notifier: https://github.com/jashmenn/irssi-notifier
+Forked from Nate Murray's [irssi-growl](https://github.com/jashmenn/irssi-growl).
