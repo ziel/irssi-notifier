@@ -50,7 +50,7 @@ $VERSION = "0.0";
 sub do_notifier {
   my ($server, $title, $data) = @_;
     $data =~ s/["';]//g;
-    system("terminal-notifier -message '$data' -title '$title' -activate com.apple.Terminal >> /dev/null 2>&1");
+    system("terminal-notifier -message '$data' -title '$title' >> /dev/null 2>&1");
     return 1
 }
 
