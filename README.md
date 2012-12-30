@@ -36,7 +36,7 @@ Usage
 
     /SET notifier_channel_regex (mychannel1|mychannel2)
 
- by default we don't send notifications for privmsgs you can able this by setting this flag to 1
+ by default we don't send notifications for privmsgs you can enable this by setting this flag to 1
 
     /SET notifier_on_privmsg 1 
 
