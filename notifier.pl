@@ -31,6 +31,7 @@
 
 use strict;
 use Irssi;
+use IPC::Open3;
 use vars qw($VERSION %IRSSI);
 # use Config;
 
@@ -50,7 +51,8 @@ $VERSION = "0.0";
 sub do_notifier {
   my ($server, $title, $data) = @_;
     $data =~ s/["';]//g;
-    system("terminal-notifier -message '> $data' -title '$title' >> /dev/null 2>&1");
+    my $pid = open3(undef, undef, undef, "terminal-notifier", "-message", "> $data", "-title", $title);
+    waitpid $pid, 0;
     return 1
 }
 
